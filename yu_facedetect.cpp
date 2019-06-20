@@ -147,7 +147,7 @@ int main(int argc, char* argv[])
     std::string proto_name_ = argv[1];
     std::string mdl_name_ = argv[2];
     //std::string image_file_path = argv[3];
-    int repeat_count = argv[3];
+    int repeat_count = 1;
     
     
     vector<string> file_names;
