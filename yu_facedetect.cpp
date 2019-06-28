@@ -141,7 +141,7 @@ int main(int argc, char* argv[])
 {
     /*if(argc < 5)
     {
-        std::cout << "[Usage]: " << argv[0] << " <proto> <caffemodel> <jpg> \n";
+        std::cout << "[Usage]: " << argv[0] << " <proto> <caffemodel> <pic_address> \n";
         return 0;
     }*/
     std::string proto_name_ = argv[1];
@@ -153,7 +153,7 @@ int main(int argc, char* argv[])
     vector<string> file_names;
     size_t count=0;
     
-    cv::VideoCapture cap(1);
+    cv::VideoCapture cap(0);
     cap.set(CV_CAP_PROP_FRAME_WIDTH, 320);
     cap.set(CV_CAP_PROP_FRAME_HEIGHT, 240);
     cv::Mat img;
